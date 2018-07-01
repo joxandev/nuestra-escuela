@@ -28,6 +28,6 @@ Leeds LS9 0TT<br> UK</address>
 
 </section>
 
-<section style="background:red">mapa</section>
+<!-- <section>mapa</section> -->
    </div>
 </template>

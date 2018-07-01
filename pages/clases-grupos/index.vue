@@ -18,7 +18,7 @@
         <td  class="align-center">Si</td>
     </tr>
     <tr>
-        <td>3-4 años</td>
+        <td>3 años</td>
         <td>Preescolar 2</td>
         <td>1 hora</td>
         <td class="align-center">Si</td>
@@ -30,13 +30,13 @@
         <td class="align-center">No</td>
     </tr>
      <tr>
-        <td>6-10 años</td>
+        <td>6-8 años</td>
         <td>Junior 1</td>
         <td>2 horas</td>
         <td class="align-center">No</td>
     </tr>
       <tr>
-        <td>10-16 años</td>
+        <td>9-16 años</td>
         <td>Junior 2</td>
         <td>2 horas</td>
         <td class="align-center">No</td>

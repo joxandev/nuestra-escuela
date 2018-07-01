@@ -59,10 +59,12 @@ ul.menu-toggle{margin-left:auto; padding: 0; margin: 0}
 button.btn-burger{border:none; background: #fff; font-size: 1.5em}
 
 
+
+
 @media screen and (max-width: 900px) {
     nav ul.menu-med{ display: none}
     nav.mobile{ display: flex; flex-direction: column; z-index: 100; position: fixed; top:0; width:100%; height: 100%; left:0; 
-    background-color: #0086f2; border: solid 1px #0086f2 }
+    background-color: #0086f2; border: solid 1px #0086f2; animation: slide-in .5s ease-out }
     nav.mobile ul{ margin:0 10px; padding: 0; font-size: 1.5em; display: flex; flex-wrap: wrap; flex-direction:row}
     nav.mobile ul li{ flex: 0 0 50%; text-align: center; line-height: 1em}
     nav.mobile ul li a i{color:#fff; display: block; font-size: 1.2em; line-height: 1.3em}
@@ -76,6 +78,12 @@ button.btn-burger{border:none; background: #fff; font-size: 1.5em}
     nav ul.menu-med{display: flex; visibility: visible;}
     ul.menu-toggle{display:none}
     nav ul li{display: inline-block; visibility: visible; margin-left:30px}
+    
+}
+
+@keyframes slide-in {
+    from{left:-100%}
+    to{left:0}
     
 }
 

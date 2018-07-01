@@ -56,7 +56,7 @@ body{font-family: Quicksand; padding:0; margin: 0; background-color: #0086f2;};
 
 }
 
-.sections{display: flex; list-style: none; flex-wrap: wrap;  margin: 30px 0 10px 0; padding:0}
+.sections{display: flex; list-style: none; flex-wrap: wrap;  margin: 10px 0 10px 0; padding:0}
  
 
 .sections a{ font-weight: bold; color:#0f2c44; display: flex; flex-wrap: wrap; flex-direction: column; padding: 10px; text-align: center}
@@ -69,11 +69,12 @@ body{font-family: Quicksand; padding:0; margin: 0; background-color: #0086f2;};
 }
 
 @media screen and (min-width: 500px) {
+  .sections{margin:20px 0}
   .sections li{flex:0 0 50%}
 }
 
 @media screen and (min-width: 900px) {
- 
+ .sections{margin:30px 0;}
   .sections li{flex:0 0 20%}
 }
 </style>

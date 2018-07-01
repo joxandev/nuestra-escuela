@@ -50,8 +50,11 @@ th{background-color: #0086f2; color: #fff; border-color: transparent}
 .align-center{text-align: center !important}
 
 @media screen and (max-width: 500px) {
-  .article h1 i{display: block}
-  .article{font-size:.8em !important}
+  .article h1 i{display: block; margin: 10px 0}
+  .article{font-size:1em !important; padding: 20px}
+  table{font-size:1em}
+  .article p, {line-height: 1.5em}
+  
   
 }
 
