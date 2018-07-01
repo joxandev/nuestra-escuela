@@ -4,7 +4,7 @@
   <HeaderSection></HeaderSection>
      <div class="bg"></div>
      <section>
-<div class="container">
+<div>
     <nuxt/>
     </div>
      </section>
@@ -56,19 +56,21 @@ th{background-color: #0086f2; color: #fff; border-color: transparent}
 }
 
 @media screen and (min-width: 900px) {
+  p{font-size:20px; line-height: 1.4em}
   .bg{height: 250px; background-repeat: no-repeat; background-size:60% auto; background-position: 50% 70%;}
-  .container{max-width: 900px; margin:auto}
+  .container{max-width: 900px; margin:auto; }
   h1, h1.mainheading{font-size:3em; text-align: center; margin: 10px; padding:0}
 
   .container section{margin:30px 50px; padding-bottom: 30px}
   section.article h2{font-size:2.3em; margin: 30px 0 20px 0 !important}
-  .article h1{margin-bottom: 40px}
+  .article h1{margin: 40px 0}
 }
 
 
 @media screen and (min-width: 1200px) {
   .container{max-width: 1000px; margin:auto}
-  .container section{margin:30px 100px}
+  
+  section.container{width:80%}
 }
 
 @media screen and (min-width: 1300px) {

@@ -1,5 +1,5 @@
 <template>
-<section class="article">
+<section class="container article">
 <h1><i class="fas fa-coins"></i> Precios cursos NEL</h1>
 <h2>Nuestros Precios</h2>
 <ul>

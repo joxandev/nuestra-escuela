@@ -1,5 +1,5 @@
 <template>
-  <section class="article">
+  <section class="container article">
    <h1><i class="far fa-address-card"></i> Quienes somos?</h1>
    <p>Bienvenidos a <strong>Nuestra Escuela Leeds</strong>, la primera escuela suplementaria de español creada en Yorkshire.</p>
 <h2>Nuestro objectivo</h2>

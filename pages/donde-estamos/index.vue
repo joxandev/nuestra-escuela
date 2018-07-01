@@ -1,5 +1,6 @@
 <template>
-<section class="article"> 
+<div class="">
+<section class="container article"> 
     <h1><i class="fas fa-map-marked-alt"></i> Donde estamos?</h1>
 <p>Las clases de español de la escuela suplementaria <strong>Nuestra Escuela Leeds</strong> se imparten en el instituto: 
 </p>
@@ -26,5 +27,7 @@ Leeds LS9 0TT<br> UK</address>
 </ul>
 
 </section>
-   
+
+<section style="background:red">mapa</section>
+   </div>
 </template>

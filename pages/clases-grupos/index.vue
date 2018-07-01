@@ -1,5 +1,5 @@
 <template>
-<section class="article"><h1><i class="fas fa-user-graduate"></i> Clases y Grupos</h1>
+<section class="container article"><h1><i class="fas fa-user-graduate"></i> Clases y Grupos</h1>
 
  <p><strong>Nuestra Escuela Leeds</strong>  se inspira en el modelo de las aulas rurales españolas. 
  Se ofrece esta oportunidad educativa a niños con edades comprendidas entre 0-16 años, que se dividen en varias clases de acuerdo con su nivel de español y edad.</p>
