@@ -12,35 +12,25 @@
         <th class="align-center">Padres en las aulas</th>
     </thead>
     <tr>
-        <td>0-2 años</td>
+        <td>0-3 años</td>
         <td>Preescolar 1</td>
         <td>1 hora</td>
         <td  class="align-center">Si</td>
     </tr>
     <tr>
-        <td>3 años</td>
-        <td>Preescolar 2</td>
-        <td>1 hora</td>
-        <td class="align-center">Si</td>
-    </tr>
-     <tr>
         <td>4-5 años</td>
-        <td>Preescolar 3</td>
-        <td>1.5 horas</td>
+        <td>Preescolar Avanzado</td>
+        <td>1.5 hora</td>
         <td class="align-center">No</td>
     </tr>
      <tr>
-        <td>6-8 años</td>
-        <td>Junior 1</td>
+        <td>6-16 años</td>
+        <td>Junior</td>
         <td>2 horas</td>
         <td class="align-center">No</td>
     </tr>
-      <tr>
-        <td>9-16 años</td>
-        <td>Junior 2</td>
-        <td>2 horas</td>
-        <td class="align-center">No</td>
-    </tr>
+
+
 </table>
 </div>
 

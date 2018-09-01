@@ -1,11 +1,11 @@
 <template>
 <header>
     <div class="logo"><h2><nuxt-link to="/" >
-    <i class="fas fa-child"></i><span>Nuestra Escuela<span class="black light"> | Leeds</span></span></nuxt-link></h2></div>
+    <span>Nuestra Escuela<span class="black light"> | Leeds</span></span></nuxt-link></h2></div>
     <nav>
      
     <ul class="menu-med">
-                <li><nuxt-link to="quienes-somos"><i class="far fa-address-card"></i> ¿Quienes Somos?</nuxt-link></li>
+                <li><nuxt-link to="quienes-somos"><i class="far fa-address-card"></i> ¿Quiénes Somos?</nuxt-link></li>
                 <li><nuxt-link to="donde-estamos"><i class="fas fa-map-marked-alt"></i> ¿Dónde estamos?</nuxt-link></li>
                 <li><nuxt-link to="calendario-escolar"><i class="far fa-calendar-check"></i> Calendario</nuxt-link></li>
                 <li><nuxt-link to="clases-grupos"><i class="fas fa-user-graduate"></i> Classes</nuxt-link></li>
@@ -18,11 +18,11 @@
     
     </nav>
 
-    <nav class="mobile" v-if="showMenu">
+    <nav class="mobile"  :class="{'show': showMenu}">
         <button class="btn-burger" @click="toggleMenu"><i class="fas fa-times"></i></button>
         <ul>
-            <li><a @click="navigate('quienes-somos')"><i class="far fa-address-card"></i> Quienes somos?</a></li>
-            <li><a @click="navigate('donde-estamos')"><i class="fas fa-map-marked-alt"></i> Donde estamos</a></li>
+            <li><a @click="navigate('quienes-somos')"><i class="far fa-address-card"></i> ¿Quiénes somos?</a></li>
+            <li><a @click="navigate('donde-estamos')"><i class="fas fa-map-marked-alt"></i> ¿Dónde estamos</a></li>
             <li><a @click="navigate('calendario-escolar')"><i class="far fa-calendar-check"></i> Calendario Escolar</a></li>
             <li><a @click="navigate('clases-grupos')"><i class="fas fa-user-graduate"></i>  Classes y Grupos</a></li>
         <li><a @click="navigate('precios')"><i class="fas fa-coins"></i>  Precios</a></li>
@@ -35,78 +35,224 @@
 
 <script>
 export default {
-    
-}
+  data() {
+    return {
+      showMenu: false
+    };
+  },
+
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+    navigate(url) {
+      this.toggleMenu();
+      this.$router.push(url);
+    }
+  }
+};
 </script>
 
 <style scoped>
-.logo{margin-right:10px;}
-.logo h2{margin: 0 !important; padding: 0 !important; letter-spacing: -1px; font-size:1.5em;};
- a:visited i{color:#333 !important}
- .black{color:#666}
-.logo h2 span.light{font-weight: normal !important}
-.logo span{font-weight:bold; margin-left: 5px}
-header{display: flex; padding: 20px; background-color: #fff}
-ul{ margin: 0; padding: 0; list-style: none;}
+.logo {
+  margin-right: 10px;
+  background-image: url(~/assets/images/nel-logo.png);
+  background-size: auto 95px;
+  background-repeat: no-repeat;
+  height: 95px;
+  width: auto;
+  text-indent: -3000em;
+  margin: 0;
+}
+.logo h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: -1px;
+  font-size: 1.5em;
+}
+a:visited i {
+}
+.black {
+  color: #fff;
+}
+.logo h2 span.light {
+  font-weight: normal !important;
+}
 
-nav ul li a{font-weight: bold; color:#333; display: block; border-bottom: solid 3px transparent; padding:10px 0}
-nav ul li a i{color:#0086f2; display: inline-block; margin-right:5px}
-nav ul li a.exact-active-link{border-bottom: solid 3px #0086f2}
+.logo h2 a {
+  display: block;
+  line-height: 95px;
+  width: 120px;
+}
+.logo span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+header {
+  display: flex;
+  padding: 10px;
+  background-color: #31bfcbff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-nav{margin-left:auto}
-ul.menu-toggle{margin-left:auto; padding: 0; margin: 0}
+nav ul li a {
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  border-bottom: solid 3px transparent;
+  padding: 10px 0;
+  font-size: 20px;
+}
+nav ul li a i {
+  color: #114646;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 24px;
+}
+nav ul li a.exact-active-link {
+  border-bottom: solid 3px #fd392dff;
+}
 
-button.btn-burger{border:none; background: #fff; font-size: 1.5em}
+nav {
+  margin-left: auto;
+}
+ul.menu-toggle {
+  margin-left: auto;
+  padding: 0;
+  margin: 0;
+}
 
-
-
+button.btn-burger {
+  border: none;
+  color: #fff;
+  background: transparent;
+  font-size: 2.2em;
+  margin: 10px;
+}
 
 @media screen and (max-width: 900px) {
-    nav ul.menu-med{ display: none}
-    nav.mobile{ display: flex; flex-direction: column; z-index: 100; position: fixed; top:0; width:100%; height: 100%; left:0; 
-    background-color: #0086f2; border: solid 1px #0086f2; animation: slide-in .5s ease-out }
-    nav.mobile ul{ margin:0 10px; padding: 0; font-size: 1.5em; display: flex; flex-wrap: wrap; flex-direction:row}
-    nav.mobile ul li{ flex: 0 0 50%; text-align: center; line-height: 1em}
-    nav.mobile ul li a i{color:#fff; display: block; font-size: 1.2em; line-height: 1.3em}
+  nav ul.menu-med {
+    display: none;
+  }
+  nav.mobile {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #fd392dff;
+    border: solid 1px #fd392dff;
+    transition: all 0.3s;
+    /* animation: slide-in 0.5s ease-out; */
+  }
 
-    .mobile button{font-size: 3em !important; color:#333; background-color: transparent; margin: 10px 0 }
+  nav.mobile.show {
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  nav.mobile ul {
+    margin: 0 10px;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  nav.mobile ul li {
+    flex: 0 0 50%;
+    text-align: center;
+    line-height: 1em;
+    font-size: 2.5em;
+  }
+  nav.mobile ul li a i {
+    color: #114646;
+    display: block;
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+
+  .mobile button {
+    font-size: 4em !important;
+    color: #333;
+    background-color: transparent;
+    margin: 10px 0;
+  }
 }
 
 @media screen and (min-width: 900px) {
+  header {
+    padding: 20px;
+  }
+  .logo {
+    background-size: auto 140px;
+    height: 140px;
+  }
+  .logo h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+    letter-spacing: -1px;
+    font-size: 2em;
+  }
 
-    .logo h2{margin: 0 !important; padding: 0 !important; letter-spacing: -1px; font-size:2em;};
-    nav ul.menu-med{display: flex; visibility: visible;}
-    ul.menu-toggle{display:none}
-    nav ul li{display: inline-block; visibility: visible; margin-left:30px}
-    
+  .logo h2 a {
+    display: block;
+    line-height: 140px;
+    width: 180px;
+  }
+  nav ul.menu-med {
+    display: flex;
+    visibility: visible;
+
+    margin-top: 30px;
+  }
+  ul.menu-toggle {
+    display: none;
+  }
+  nav ul li {
+    display: inline-block;
+    visibility: visible;
+    margin-left: 30px;
+  }
+
+  nav.mobile {
+    display: none;
+  }
 }
 
 @keyframes slide-in {
-    from{left:-100%}
-    to{left:0}
-    
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
 }
-
-
 </style>
 
 <script>
 export default {
-    data:()=>{ return {showMenu:false}}
-       
-  
-    ,
-    methods:{
-        toggleMenu(){
-            this.showMenu=!this.showMenu;
-        },
+  data() {
+    return {
+      showMenu: false
+    };
+  },
 
-        navigate(pageName){
-            this.showMenu = false;
-            this.$router.push(pageName);
-        }
-
-
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+    navigate(url) {
+      this.toggleMenu();
+      this.$router.push(url);
     }
-}
+  }
+};
 </script>
