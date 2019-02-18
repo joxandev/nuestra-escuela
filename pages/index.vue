@@ -23,7 +23,7 @@
                 </nuxt-link></li>
                
                  <li><nuxt-link to="clases-grupos"><i class="fas fa-user-graduate"></i><span>Clases y Grupos</span>
-                 <p>Nuestra Escuela Leeds tiene grupos para niños desde 0 a 16 años divididos en Pre Escolar (niveles 1 y avanzado) y Juniors</p>
+                 <p>Nuestra Escuela Leeds tiene grupos para niños desde 0 a 18 años divididos en Pre Escolar (niveles 1 y avanzado) y Juniors</p>
                 </nuxt-link></li>
                  <li><nuxt-link to="precios"><i class="fas fa-coins"></i><span>Precios</span>
                  <p>Nuestra Escuela Leeds es una asociacion sin animo de lucro e intentamos que nuestro precios sean lo menores posible.</p>

@@ -3,7 +3,7 @@
         <footer class="container footer-bg">
             <ul class="social-media">
                 <li><a href="https://www.facebook.com/NuestraEscuelaLeeds/" target="new"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="."><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://twitter.com/nelnestraescue1?lang=ens"><i class="fab fa-twitter-square"></i></a></li>
                 <li><a href="."><i class="fab fa-instagram"></i></a></li>
             </ul>
            
@@ -13,9 +13,12 @@
                 <li><nuxt-link to="calendario-escolar"><i class="far fa-calendar-check"></i> Calendario</nuxt-link></li>
                 <li><nuxt-link to="clases-grupos"><i class="fas fa-user-graduate"></i>Classes y Grupos</nuxt-link></li>
                 <li><nuxt-link to="precios"><i class="fas fa-coins"></i> Precios</nuxt-link></li>
+                <li><nuxt-link to="colabora"><i class="fas fa-hands-helping"></i> Colabora</nuxt-link></li>
+        
             </ul>
 
             <p>Nuestro correo electrónico es <a class="mail" href="mailto:nuestraescuelaleeds@gmail.com">nuestraescuelaleeds@gmail.com</a></p>
+            <p><strong>UK Registered Charity No 1180223</strong></p>
           
         </footer>
     </div>

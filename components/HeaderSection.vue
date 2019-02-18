@@ -8,8 +8,9 @@
                 <li><nuxt-link to="quienes-somos"><i class="far fa-address-card"></i> ¿Quiénes Somos?</nuxt-link></li>
                 <li><nuxt-link to="donde-estamos"><i class="fas fa-map-marked-alt"></i> ¿Dónde estamos?</nuxt-link></li>
                 <li><nuxt-link to="calendario-escolar"><i class="far fa-calendar-check"></i> Calendario</nuxt-link></li>
-                <li><nuxt-link to="clases-grupos"><i class="fas fa-user-graduate"></i> Classes</nuxt-link></li>
-             <li><nuxt-link to="precios"><i class="fas fa-coins"></i> Precios</nuxt-link></li>
+                <li><nuxt-link to="clases-grupos"><i class="fas fa-user-graduate"></i> Clases</nuxt-link></li>
+                <li><nuxt-link to="precios"><i class="fas fa-coins"></i> Precios</nuxt-link></li>
+                <li><nuxt-link to="colabora"><i class="fas fa-hands-helping"></i> Colabora</nuxt-link></li>
         
             </ul>
         <ul class="menu-toggle">
@@ -24,8 +25,10 @@
             <li><a @click="navigate('quienes-somos')"><i class="far fa-address-card"></i> ¿Quiénes somos?</a></li>
             <li><a @click="navigate('donde-estamos')"><i class="fas fa-map-marked-alt"></i> ¿Dónde estamos</a></li>
             <li><a @click="navigate('calendario-escolar')"><i class="far fa-calendar-check"></i> Calendario Escolar</a></li>
-            <li><a @click="navigate('clases-grupos')"><i class="fas fa-user-graduate"></i>  Classes y Grupos</a></li>
+            <li><a @click="navigate('clases-grupos')"><i class="fas fa-user-graduate"></i>  Clases y Grupos</a></li>
         <li><a @click="navigate('precios')"><i class="fas fa-coins"></i>  Precios</a></li>
+         <li><a @click="navigate('colabora')"><i class="fas fa-hands-helping"></i> Colabora</a></li>
+        
        
         </ul>
     </nav>

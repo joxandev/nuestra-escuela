@@ -51,13 +51,15 @@
 <h2>Matriculación anual</h2>
 <p class="bold">£30 por familia</p>
 <p>Se abona al comienzo del curso escolar conjuntamente con el pago del primer trimestre</p>
-<h2>Informacion importante</h2>
+<h2>Información importante</h2>
 
 <ul>
     <li>Los precios descritos son por niño matrículado en NEL.  Se aplicará un 10% de descuento a aquellas familias con más de un hijo en la escuela.</li>
     <li>Al inicio del curso escolar (Septiembre 2018) se realizará un pago único de £30 por familia en concepto de matrícula anual. Aquellos alumnos que comienzen a mitad de curso (half term de Febrero), sólo abonarán £15 de matriculación.</li>
-    <li>Se aceptan pagos anuales o por trimestre. Familias con 2 o más hijos podrían solicitar pagos de medios trimestres en vez de trimestrales. Por favor, pónganse en contacto con NEL si se quiere barajar esta opción.</li>
-    <li>Los pagos se abonarán antes de comenzar cada uno de los trimestres correspondientes utilizando  cualquiera de las modalidades descritas abajo.</li>
+    <li>Se aceptan pagos anuales o por trimestre. Las familias con 2 o más hijos podrían solicitar pagos de medios trimestres en vez de trimestrales. Por favor, pónganse en contacto con NEL si se quiere barajar esta opción.</li>
+    <li>Los pagos abonarán o bien anualmente (al comienzo del año escolar)
+o bien antes de comenzar cada uno de los trimestres correspondientes
+utilizando cualquiera de las modalidades descritas abajo.</li>
     <li>NEL no puede reembolsar el pago las clases a las que los alumnos no puedan asistir.</li>
 </ul>
 
@@ -67,8 +69,8 @@
 <h2>Modalidades de pagos disponibles</h2>
 <ul>
     <li>Transferencia a la cuenta bancaria  de la escuela NEL:
-        <span class="list">Short code: 20-48-42</span>
-        <span class="list">Bank account: 80567795</span>
+        <span class="list">Short code: 20-76-92</span>
+        <span class="list">Bank account: 03750183</span>
         <span class="list">Referencia de pago: la parte de la dirección de correo situada antes de la @ de uno de los padres y que hayan puesto en el formulario de inscripción.</span>
     </li>
     <li>En efectivo.  A pagar el primer día de clase de cada trimestre. NEL enviará un correo electrónico correspondiente al pago abonado.</li>

@@ -1,7 +1,7 @@
 <template>
 <section class="container article">
      <h1><i class="far fa-calendar-check"></i>  Calendario Escolar 2018/2019</h1>
-     <p>Nuestras clases se celebran los domingos de 3 a 5 de la tarde</p>
+     <p>Nuestras clases se celebran los domingos de 3 a 5 de la tarde.</p>
 
      <h2>Primer Trimestre</h2>
      <div class="terms">
